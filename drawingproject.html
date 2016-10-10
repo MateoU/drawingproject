@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-   <link rel="stylesheet" href="drawingproject.css">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="drawingproject.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <title>
+      Drawing Project
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>T A N G R A M S</h1>
 
-   <title>
-     Drawing Project
-   </title>
-</head>
-
-   <canvas id="drawingArea" width="800" height="800"></canvas>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="drawingproject.js"></script>
-</body>
+    </header>
+    <button onclick="createShape()" class="create" id="create">create a shape!</button>
+    <button onclick="doSomething()" class="create" id="notCreate">change background-color!</button>
+    <div id="fox">I'm a fox</div>
+    <canvas id="drawingArea" width="1250" height="1000"></canvas>
+    <canvas id="c" width = "500" height = "500" ></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="drawingproject.js"></script>
+  </body>
 </html>

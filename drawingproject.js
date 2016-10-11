@@ -41,7 +41,7 @@ function onMouseUp(evt){
 
 function translateSlope(){
   canvas.translate(50,150);
-  console.log(thingX);
+  console.log("working");
 }
 //console.log(onMouseUp.x);
 canvasDiv.addEventListener('mousedown', onMouseUp, false);
@@ -260,11 +260,15 @@ function createShape(){
   //fillStyle
   if(x == 1){
     console.log(xCoordinate);
-    canvasDiv.addEventListener('mouseup', translateSlope, false);
+    //canvasDiv.addEventListener('click', canvas.translate(100,0), false);
     canvas.fillStyle = differentColor;
     canvas.fillRect(xCoordinate,yCoordinate,100,100);
+    mouseClicked = function() {
+    canvas.translate(100,0);
+    console.log("hi");
+};
   } else if(x == 2) {
-    canvasDiv.addEventListener('mouseup', translateSlope, false);
+    //canvasDiv.addEventListener('mouseup', translateSlope, false);
     canvas.fillStyle = differentColor;
     canvas.beginPath();
     canvas.moveTo(xCoordinate,yCoordinate);
@@ -272,7 +276,7 @@ function createShape(){
     canvas.lineTo(triangleCX,triangleCY);
     canvas.fill();
   } else {
-    canvasDiv.addEventListener('mouseup', translateSlope, false);
+    //canvasDiv.addEventListener('mouseup', translateSlope, false);
     canvas.fillStyle = differentColor;
     canvas.beginPath();
     canvas.arc(xCoordinate,yCoordinate, 50, 0, 2*Math.PI);
